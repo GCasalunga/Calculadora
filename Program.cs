@@ -1,101 +1,70 @@
 ﻿string opcaoDesejada;
 
-Console.Clear();
-
-Console.WriteLine("--- Calculadora 4 operações ---\n");
-
-Console.WriteLine("[+] Soma");
-Console.WriteLine("[-] Subtração");
-Console.WriteLine("[*] Multiplicação");
-Console.WriteLine("[/] Divisão");
-
-Console.Write("\nSelecione a operação desejada: ");
-
-opcaoDesejada = Console.ReadLine()!;
-
-switch (opcaoDesejada)
+do
 {
-    case "+":
-    double e ,f ,resultado2;
+    Console.Clear();
 
-        Console.WriteLine("---Soma A+B---\n");
-        Console.WriteLine("Digite os valores.");
-        Console.Write("E = ");
-        e = Convert.ToDouble(Console.ReadLine());
-        Console.Write("F = ");
-        f = Convert.ToDouble(Console.ReadLine());
+    Console.WriteLine("--- Calculadora 4 operações ---\n");
 
-        resultado2 = e + f;
+    Console.WriteLine("[+] Soma");
+    Console.WriteLine("[-] Subtração");
+    Console.WriteLine("[*] Multiplicação");
+    Console.WriteLine("[/] Divisão");
+    Console.WriteLine("[E ou e] Exponenciação");
+    Console.WriteLine("[.] Radiciação");
+    Console.WriteLine("[b ou B] Bhaskara");
 
-        Console.WriteLine($"{e} Somado {f} é {resultado2}");
-        
-        Console.WriteLine("\nPressione uma tecla para continuar...");
-        Console.ReadKey();
-        break;
+    Console.WriteLine("\n[0] Sair");
 
-     case "-":
+    Console.Write("\nSelecione a operação desejada: ");
 
-       double g, h, resultado3;
+    opcaoDesejada = Console.ReadLine()!;
 
-       Console.WriteLine("--Subtração A/B--\n");
-       Console.WriteLine("Digite os Valores.");
+    switch (opcaoDesejada)
+    {
+        case "+":
+            Aritmetica.Adicao();
+            break;
 
-       Console.Write("A = ");
-       g = Convert.ToDouble(Console.ReadLine());
-       Console.Write("B = ");
-       h = Convert.ToDouble(Console.ReadLine());
+        case "-":
+            Aritmetica.Subtracao();
 
-       resultado3 = g - h;
+            break;
 
-       Console.WriteLine($"{g} Subtraido por {h} é {resultado3}");
-        
-       Console.WriteLine("\nPressione uma tecla para continuar...");
-       Console.ReadKey();
+        case "*":
+            Aritmetica.Multiplicação();
 
-       break;
+            break;
 
-    case "*":
-        double a, b, resultado;
+        case "/":
+            Aritmetica.Divisão();
+            break;
 
-        Console.WriteLine("--- Multiplicação A*B ---\n");
-        Console.WriteLine("Digite os valores.");
-
-        Console.Write("A = ");
-        a = Convert.ToDouble(Console.ReadLine());
-        Console.Write("B = ");
-        b = Convert.ToDouble(Console.ReadLine());
-
-        resultado = a * b;
-
-        Console.WriteLine($"{a} multiplicado por {b} é {resultado}");
-
-        Console.WriteLine("\nPressione uma tecla para continuar...");
-        Console.ReadKey();
-
-        break;
-    
-     case "/":
-       double c, d, resultado1;
-
-       Console.WriteLine("--Divisão A/B--\n");
-       Console.WriteLine("Digite os Valores.");
-
-        Console.Write("A = ");
-        c = Convert.ToDouble(Console.ReadLine());
-        Console.Write("B = ");
-        d = Convert.ToDouble(Console.ReadLine());
-
-        resultado1 = c / d;
-
-        Console.WriteLine($"{c} Dividido por {d} é {resultado1}");
-        
-        Console.WriteLine("\nPressione uma tecla para continuar...");
-        Console.ReadKey();
-        break;
-        
         default:
-        Console.WriteLine("Opção inválida.");
-        break;
-}
+            Console.WriteLine("Opção inválida.");
+            break;
+
+        case "E" or "e":
+
+            Aritmetica.Exponenciação();
+            break;
+
+        case "R" or "r":
+            Aritmetica.Radiciação();
+
+            break;
+
+        case "B" or "b":
+            Aritmetica.Bhaskara();
+
+            break;
+
+        case "0":
+            break;
+    }
+
+    Console.ResetColor();
+
+} while (opcaoDesejada != "0");
 
 Console.WriteLine("\nObrigado por utilizar nosso programa.");
