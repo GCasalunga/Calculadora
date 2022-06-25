@@ -1,2 +1,9 @@
-# Calculadora
-Resolução de exercício Calculadora - 2022/04/29
+# **PROJETO FINAL: CALCULADORA**
+Esse programa contém uma calculadora com as seguintes operações:
+- Adição
+- Subtração
+- Multiplicação
+- Divisão
+- Exponenciação
+- Radiciação
+- Bhaskara
