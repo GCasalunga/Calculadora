@@ -7,3 +7,5 @@ Esse programa contém uma calculadora com as seguintes operações:
 - Exponenciação
 - Radiciação
 - Bhaskara
+# **DESENVOLVEDORA: Giovanna DE Souza Casalunga** #
+[Link do perfil](https://github.com/GCasalunga)
