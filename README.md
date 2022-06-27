@@ -1,4 +1,5 @@
 # **PROJETO FINAL: CALCULADORA**
+
 Esse programa contém uma calculadora com as seguintes operações:
 - Adição
 - Subtração
@@ -7,5 +8,7 @@ Esse programa contém uma calculadora com as seguintes operações:
 - Exponenciação
 - Radiciação
 - Bhaskara
-# **DESENVOLVEDORA: Giovanna DE Souza Casalunga** #
+
+# **DESENVOLVEDORA: Giovanna de Souza Casalunga** #
+
 [Link do perfil](https://github.com/GCasalunga)
